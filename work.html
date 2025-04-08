@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="">
+        <input type="text" placeholder="enter your name" id="can"><br>
+        <input type="text" placeholder="enter ur home place" id="cans"><br>
+        <button onclick="checkValidation()">checkValidation</button>
+    </form>
+
+</body>
+
+</html>
+<script>
+    function checkValidation() {
+        const a = document.getElementById("can").value;
+        const b = document.getElementById("cans").value;
+        if (a.trim() === '' || b.trim() === '') {
+            alert('all the inputs should have value in them');
+            return false;
+        } else {
+            alert('some have them');
+            return true;
+        };
+    }
+
+</script>
